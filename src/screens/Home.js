@@ -1,25 +1,23 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { colors } from '../constants/constants';
+import React from "react";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { colors } from "../constants/constants";
+import Section1 from "../components/HomeScreen/Section1";
 
 // create a component
 const Home = () => {
-    return (
-        <View style={styles.container}>
-            <Text>Home</Text>
-        </View>
-    );
+  return (
+    <ScrollView style={styles.container}>
+      <Section1 />
+    </ScrollView>
+  );
 };
 
 // define your styles
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: colors.red,
-    },
+  container: {
+    backgroundColor: colors.commonColor,
+  },
 });
 
 //make this component available to the app
