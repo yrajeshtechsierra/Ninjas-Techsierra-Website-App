@@ -1,6 +1,6 @@
 //import liraries
 import React from 'react';
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator, DrawerToggleButton } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native"
 import Home from '../screens/Home';
 import WhatWeDo from '../screens/WhatWeDo';
@@ -13,7 +13,13 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigation = () => {
     return (
         <NavigationContainer>
-            <Drawer.Navigator>
+            <Drawer.Navigator
+                screenOptions={{
+                    drawerPosition : "right",
+                    headerLeft : false,
+                    headerRight : () => <DrawerToggleButton  />,
+                }}
+            >
                 <Drawer.Screen name='Home' component={Home}/>
                 <Drawer.Screen name='WhatWeDo' component={WhatWeDo}/>
                 <Drawer.Screen name='WhoWeAre' component={WhoWeAre}/>
