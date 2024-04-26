@@ -1,11 +1,14 @@
 //import liraries
 import React from "react";
-import { View, StyleSheet, Image, Text, Button } from "react-native";
+import { View, StyleSheet, Image, Text } from "react-native";
 import { backgroundImage, colors } from "../../constants/constants";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { moderateScale, scale } from "react-native-size-matters";
+import { useNavigation } from "@react-navigation/native";
 
 // create a component
 const Section1 = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Image
@@ -17,7 +20,7 @@ const Section1 = () => {
           END TO END DIGITAL AND IT SOLUTIONS FOR BUISNESS TRANSFORMATION
         </Text>
       </View>
-      <TouchableOpacity style={styles.btnContainer}>
+      <TouchableOpacity style={styles.btnContainer} onPress={() => navigation.navigate("Contact")}>
         <Text style={styles.wanaTalkBtn}>wana talk?</Text>
       </TouchableOpacity>
     </View>
@@ -31,29 +34,29 @@ const styles = StyleSheet.create({
   },
   BackgroundImage: {
     width: "100%",
-    height: 500,
+    height: moderateScale(350),
   },
   ViewTextContainer: {
-    padding: 30,
+    padding: moderateScale(30),
   },
   textStyle: {
     color: colors.white,
-    fontSize: 26,
-    lineHeight: 40,
-    fontWeight: "700",
+    fontSize: scale(20),
+    lineHeight: moderateScale(30),
+    fontWeight:"700",
   },
   btnContainer: {
     flex: 1,
-    paddingVertical: 5,
+    paddingVertical: moderateScale(5),
     justifyContent: "center",
     alignItems: "center",
-    width: 220,
-    marginLeft: 40,
-    borderRadius: 50,
+    width: moderateScale(200),
+    marginLeft: moderateScale(30),
+    borderRadius: moderateScale(50),
     backgroundColor: colors.btnColor,
   },
   wanaTalkBtn: {
-    fontSize: 24,
+    fontSize: scale(20),
     textTransform: "uppercase",
     fontWeight: "800",
     color: colors.white,
