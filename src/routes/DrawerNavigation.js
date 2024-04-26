@@ -6,6 +6,7 @@ import Home from '../screens/Home';
 import WhatWeDo from '../screens/WhatWeDo';
 import WhoWeAre from '../screens/WhoWeAre';
 import CaseStudy from '../screens/CaseStudy';
+import Contact from '../screens/Contact';
 
 const Drawer = createDrawerNavigator();
 
@@ -24,6 +25,7 @@ const DrawerNavigation = () => {
                 <Drawer.Screen name='WhatWeDo' component={WhatWeDo}/>
                 <Drawer.Screen name='WhoWeAre' component={WhoWeAre}/>
                 <Drawer.Screen name='CaseStudy' component={CaseStudy}/>
+                <Drawer.Screen name='Contact' component={Contact}/>
             </Drawer.Navigator>
         </NavigationContainer>
     );
