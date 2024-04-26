@@ -30,11 +30,12 @@ const Section1 = () => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
+    paddingBottom : moderateScale(41),
     backgroundColor: colors.commonColor,
   },
   BackgroundImage: {
     width: "100%",
-    height: moderateScale(350),
+    height: moderateScale(360),
   },
   ViewTextContainer: {
     padding: moderateScale(30),
