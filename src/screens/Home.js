@@ -5,6 +5,7 @@ import { colors } from "../constants/constants";
 import Section1 from "../components/HomeScreen/Section1";
 import Section2 from "../components/HomeScreen/Section2";
 import Section3 from "../components/HomeScreen/Section3";
+import Section4 from "../components/HomeScreen/Section4";
 
 // create a component
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Section1 />
       <Section2 />
       <Section3 />
+      <Section4 />
     </ScrollView>
   );
 };
