@@ -23,3 +23,18 @@ export const TechStackImages = {
     plusIcon : require("../assets/techStack/plusicon.png"),
     minusIcon : require("../assets/techStack/minusicon.png"),
 }
+
+export const OurApproach = {
+    Ideate : require("../assets/OurApproach/Ideateicon.png"),
+    Ideate1 : require("../assets/OurApproach/1.png"),
+
+    Design : require("../assets/OurApproach/Designicon.png"),
+    Design2 : require("../assets/OurApproach/2.png"),
+
+    Develop : require("../assets/OurApproach/Developicon.png"),
+    Develop3 : require("../assets/OurApproach/3.png"),
+
+    Deploy : require("../assets/OurApproach/Deployicon.png"),
+    Deploy4 : require("../assets/OurApproach/4.png"),
+    
+}

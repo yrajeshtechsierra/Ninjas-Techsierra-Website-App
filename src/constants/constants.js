@@ -6,6 +6,9 @@ const colors = {
   btnColor: "#06A9CA",
   techStackBgColor1 : "#080e30",
   techStackColor : "#c4cbf5",
+  ourApproach : "#08164f",
+  ourApproachWrapperBorder : "#334679",
+
 };
 
 const backgroundImage = {
