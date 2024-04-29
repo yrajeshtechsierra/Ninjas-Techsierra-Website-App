@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native'
 import { colors } from '../../constants/constants';
 import { data } from './TechStackData';
 import { moderateScale, scale } from 'react-native-size-matters';
@@ -16,40 +16,44 @@ const Section3 = () => {
 
     return (
         <>
-            <View style={{ ...styles.mainCointainer, height: increaseHeight === true ? "auto" : moderateScale(300) }}>
+            <View style={{ ...styles.mainCointainer, height: increaseHeight === true ? "auto" : moderateScale(340) }}>
                 {
                     data.map((item, index) => (
-                        <View key={index} style={{width : "90%"}}>
-                            <View style={styles.container}>
-                                <View style={styles.IconTextContainer}>
-                                    <View>
-                                        <Image
-                                            source={item.logo}
-                                            alt={item.name}
-                                            style={styles.StackIcon} />
-                                    </View>
-                                    <Text style={styles.text}>{item.name}</Text>
-                                </View>
-                                <TouchableOpacity onPress={() => toggle(item.id)}>
-                                    {
-                                        selected === item.id
-                                            ?
+                        <View key={index} style={{width : "90%"}} >
+                            <ImageBackground source={selected === item.id ?item.backgroundImage : null} style={styles.ImageBackgroundStyling}>
+                                <View style={styles.container}>
+                                    <View style={styles.IconTextContainer}>
+                                        <View>
                                             <Image
-                                                source={MinusIcon}
-                                                alt={`${item.name}-plusIcon`}
-                                                style={styles.PlusIcon} />
-                                            : <Image
-                                                source={PlusIcon}
-                                                alt={`${item.name}-plusIcon`}
-                                                style={styles.PlusIcon} />
-                                    }
-                                </TouchableOpacity>
-                            </View>
-                            {
-                                selected === item.id
-                                ? <Text style={styles.SelectedText}>{item.content}</Text>
-                                : ""
-                            }
+                                                source={item.logo}
+                                                alt={item.name}
+                                                style={styles.StackIcon} />
+                                        </View>
+                                        <Text style={styles.text}>{item.name}</Text>
+                                    </View>
+                                    <TouchableOpacity onPress={() => toggle(item.id)}>
+                                        {
+                                            selected === item.id
+                                                ?
+                                                <Image
+                                                    source={MinusIcon}
+                                                    alt={`${item.name}-plusIcon`}
+                                                    style={styles.PlusIcon} />
+                                                : <Image
+                                                    source={PlusIcon}
+                                                    alt={`${item.name}-plusIcon`}
+                                                    style={styles.PlusIcon} />
+                                        }
+                                    </TouchableOpacity>
+                                </View>
+                                <View style={styles.SelectedTextContainer}>
+                                {
+                                    selected === item.id
+                                    ? <Text style={styles.SelectedText}>{item.content}</Text>
+                                    : null
+                                }
+                                </View>
+                            </ImageBackground>
                         </View>
                     ))
                 }
@@ -82,7 +86,6 @@ const styles = StyleSheet.create({
     container: {
         width: "90%",
         paddingVertical: moderateScale(10),
-        marginBottom: moderateScale(10),
         justifyContent: "flex-start",
         alignItems: "flex-start",
         flexDirection: "row",
@@ -91,7 +94,8 @@ const styles = StyleSheet.create({
         flex: 2,
         flexDirection: "row",
         justifyContent: "flex-start",
-        alignItems: "center"
+        alignItems: "center",
+        marginStart : moderateScale(10)
     },
     text: {
         marginStart: moderateScale(30),
@@ -121,6 +125,13 @@ const styles = StyleSheet.create({
         color : colors.white,
         fontSize : scale(15),
         fontWeight : "500",
+    },
+    SelectedTextContainer : {
+        padding : moderateScale(10)
+    },
+    ImageBackgroundStyling : {
+        marginVertical : moderateScale(10),
+        borderRadius : moderateScale(500),
     }
 });
 
