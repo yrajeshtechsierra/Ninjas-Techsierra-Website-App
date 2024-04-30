@@ -64,11 +64,19 @@ export const clientLogo = {
 
     nxivi : require("../assets/ClientLogo/nxivi.png"),
 
-    // openGate : require("../assets/ClientLogo/openGateCapital.png"),
+    openGate : require("../assets/ClientLogo/openGateCapital.png"),
 
     slate : require("../assets/ClientLogo/salate.png"),
 
-    // weShape : require("../assets/ClientLogo/weShape.png"),
+    weShape : require("../assets/ClientLogo/weShape.png"),
 
     wunderkind : require("../assets/ClientLogo/wunderkind.png"),
+}
+
+export const ourClientSay = {
+    Erik : require("../assets/OurClientsSays/ErikMinges.png"),
+    Frances : require("../assets/OurClientsSays/FrancesHo.png"),
+    Marc : require("../assets/OurClientsSays/Marc.png"),
+    Quincy : require("../assets/OurClientsSays/Quincy.png"),
+    Tobias : require("../assets/OurClientsSays/Tobias.png"),
 }

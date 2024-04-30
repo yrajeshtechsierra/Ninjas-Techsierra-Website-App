@@ -8,6 +8,7 @@ import Section3 from "../components/HomeScreen/Section3";
 import Section4 from "../components/HomeScreen/Section4";
 import Section5 from "../components/HomeScreen/Section5";
 import Section6 from "../components/HomeScreen/Section6";
+import Section7 from "../components/HomeScreen/Section7";
 
 // create a component
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Section4 />
       <Section5 />
       <Section6 />
+      <Section7 />
     </ScrollView>
   );
 };

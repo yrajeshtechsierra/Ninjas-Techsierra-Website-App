@@ -7,7 +7,7 @@ import { moderateScale } from 'react-native-size-matters';
 function OnBoardingItem({ item, width }) {
 
     return (
-        <View style={ { width, justifyContent : "center", alignItems : "center" }}>
+        <View style={ { width, justifyContent : "center", alignItems : "center" , backgroundColor : item.name === "nxivi" || item.name === "slate" ? "#002552": "white" }}>
             <Image source={item.logo} alt={item.name} style={styles.image} />
         </View>
     )
@@ -25,7 +25,7 @@ const Section6 = () => {
                 flatListRef.current.scrollToIndex({ index: nextIndex, animated: true });
                 setCurrentIndex(nextIndex);
             }
-        }, 3000); // Change slide every 3 seconds
+        }, 1500); // Change slide every 3 seconds
 
         return () => clearInterval(interval);
     }, [currentIndex]);
