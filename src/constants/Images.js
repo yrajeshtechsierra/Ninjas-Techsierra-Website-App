@@ -38,3 +38,37 @@ export const OurApproach = {
     Deploy4 : require("../assets/OurApproach/4.png"),
     
 }
+
+export const clientLogo = {
+    apexon : require("../assets/ClientLogo/apexon.png"),
+
+    aurotech : require("../assets/ClientLogo/aurotech.png"),
+
+    enrich : require("../assets/ClientLogo/enrich.png"),
+
+    etaillinsights : require("../assets/ClientLogo/etailinsights1.png"),
+
+    fci : require("../assets/ClientLogo/fci.png"),
+
+    ispace : require("../assets/ClientLogo/ispace.png"),
+
+    itpeople : require("../assets/ClientLogo/itpeople.png"),
+
+    lenovo : require("../assets/ClientLogo/lenovo.png"),
+
+    mds : require("../assets/ClientLogo/MDS.png"),
+
+    myxx : require("../assets/ClientLogo/myxx.png"),
+
+    noval : require("../assets/ClientLogo/Novelcx.png"),
+
+    nxivi : require("../assets/ClientLogo/nxivi.png"),
+
+    // openGate : require("../assets/ClientLogo/openGateCapital.png"),
+
+    slate : require("../assets/ClientLogo/salate.png"),
+
+    // weShape : require("../assets/ClientLogo/weShape.png"),
+
+    wunderkind : require("../assets/ClientLogo/wunderkind.png"),
+}
