@@ -9,10 +9,12 @@ const colors = {
   ourApproach : "#08164f",
   ourApproachWrapperBorder : "#334679",
   OurOffice : "#08113d",
+  footerBGcolor : "#0a1a3d",
 };
 
 const backgroundImage = {
   HomeBanner: require("../assets/HomeBanner.png"),
+  FooterLogo : require("../assets/FooterLogo.png"),
 };
 
 export { colors, backgroundImage };

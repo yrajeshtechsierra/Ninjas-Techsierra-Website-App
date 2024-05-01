@@ -87,3 +87,10 @@ export const ourOffice = {
     indiaLoction : require("../assets/OurOffice/IndiaLocation.png"),
     USLocation : require("../assets/OurOffice/USLocation.png"),
 }
+
+export const social = {
+    youtube : require("../assets/SocialImage/YoutubeLogo.png"),
+    twitter : require("../assets/SocialImage/TwitterLogo.png"),
+    linkdin : require("../assets/SocialImage/LinkdinLogo.png"),
+    instagram : require("../assets/SocialImage/InstagramLogo.png"),
+}
