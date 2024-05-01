@@ -8,7 +8,7 @@ const colors = {
   techStackColor : "#c4cbf5",
   ourApproach : "#08164f",
   ourApproachWrapperBorder : "#334679",
-
+  OurOffice : "#08113d",
 };
 
 const backgroundImage = {

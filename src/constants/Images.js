@@ -80,3 +80,10 @@ export const ourClientSay = {
     Quincy : require("../assets/OurClientsSays/Quincy.png"),
     Tobias : require("../assets/OurClientsSays/Tobias.png"),
 }
+
+export const ourOffice = {
+    map : require("../assets/OurOffice/Map.png"),
+    location : require("../assets/OurOffice/Location.png"),
+    indiaLoction : require("../assets/OurOffice/IndiaLocation.png"),
+    USLocation : require("../assets/OurOffice/USLocation.png"),
+}

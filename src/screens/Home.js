@@ -1,6 +1,6 @@
 //import liraries
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 import { colors } from "../constants/constants";
 import Section1 from "../components/HomeScreen/Section1";
 import Section2 from "../components/HomeScreen/Section2";
@@ -9,6 +9,7 @@ import Section4 from "../components/HomeScreen/Section4";
 import Section5 from "../components/HomeScreen/Section5";
 import Section6 from "../components/HomeScreen/Section6";
 import Section7 from "../components/HomeScreen/Section7";
+import Section8 from "../components/HomeScreen/Section8";
 
 // create a component
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Section8 />
     </ScrollView>
   );
 };
